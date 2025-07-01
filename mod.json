@@ -1,0 +1,27 @@
+{
+	"geode": "4.6.2",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "relikrs.peter_griffin_jumpscare",
+	"name": "Peter Griffin Jumpscare",
+	"version": "1.0.0",
+	"developer": "RelikRS",
+	"description": "hallo", 
+	"resources": {
+		"sprites": [
+			"resources/tuff_peter.png"
+		],
+		"files":[
+			"resources/top10tuff.mp3"
+		]
+	},
+	"tags": ["joke"],
+	"links": {
+	"community": "https://discord.gg/p82cuzg6m3",
+	"source": "https://github.com/RelikGD/PGJSMod"
+	}
+}
