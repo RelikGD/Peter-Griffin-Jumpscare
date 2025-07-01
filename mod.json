@@ -8,9 +8,9 @@
 	},
 	"id": "relikrs.peter_griffin_jumpscare",
 	"name": "Peter Griffin Jumpscare",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"developer": "RelikRS",
-	"description": "hallo", 
+	"description": "hallo",
 	"resources": {
 		"sprites": [
 			"resources/tuff_peter.png"
