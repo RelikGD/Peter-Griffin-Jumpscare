@@ -38,13 +38,27 @@ class $modify(Peter, MenuGameLayer) {
 		
 		auto scene = director->getRunningScene();
 		
-		
 		auto winSize = director->getWinSize();
+		
 
 		if (!Peter)	{
-		auto sprite = CCSprite::create("tuff_peter"_spr);
+		auto sprite = CCSprite::createWithSpriteFrameName("frame (1).png"_spr);
+		auto array = CCArray::create();
+
+		auto frameCache = CCSpriteFrameCache::get();
 		
-		//Das frische serbische bier pöhhhh ja bruder digga komm auf ein 1v1 in fortnite im bett
+		for (int i = 1; i < 36; i++) {
+			auto frameName = fmt::format("frame ({}).png"_spr, i);
+			auto frame = frameCache->spriteFrameByName(frameName.c_str());
+			array->addObject(frame);
+		}
+
+		auto anim = CCAnimation::createWithSpriteFrames(array, 0.1f);
+		auto animPeter = CCAnimate::create(anim);
+
+		auto repeatForever = CCRepeatForever::create(animPeter);
+	
+		//Das frische serbische bier pöhhhh ja bruder digga komm auf ein 1v1 in fortnite im bett mit dem bierigen serbischen bier bruder
 		
 		sprite->setPosition(CCPoint(this->getContentWidth() /2, this->getContentHeight() / 2));
 		sprite->setZOrder(scene->getHighestChildZ() +1);
@@ -58,6 +72,7 @@ class $modify(Peter, MenuGameLayer) {
 
 			auto file = Mod::get()->getResourcesDir() / "top10tuff.mp3";
 			FMODAudioEngine::sharedEngine()->playEffect(file.string());
+			sprite->runAction(repeatForever);
 		}
 		
 	}

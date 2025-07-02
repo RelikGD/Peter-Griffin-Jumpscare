@@ -1,5 +1,5 @@
 {
-	"geode": "4.6.2",
+	"geode": "4.6.3",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -8,20 +8,27 @@
 	},
 	"id": "relikrs.peter_griffin_jumpscare",
 	"name": "Peter Griffin Jumpscare",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"developer": "RelikRS",
 	"description": "hallo",
 	"resources": {
 		"sprites": [
 			"resources/tuff_peter.png"
 		],
-		"files":[
+		"files": [
 			"resources/top10tuff.mp3"
-		]
+		],
+		"spritesheets": {
+			"PeterAnimSheet": [
+				"resources/peter_anim/*.png"
+			]
+		}
 	},
-	"tags": ["joke"],
+	"tags": [
+		"joke"
+	],
 	"links": {
-	"community": "https://discord.gg/p82cuzg6m3",
-	"source": "https://github.com/RelikGD/Peter-Griffin-Jumpscare"
+		"community": "https://discord.gg/p82cuzg6m3",
+		"source": "https://github.com/RelikGD/Peter-Griffin-Jumpscare"
 	}
 }
